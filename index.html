@@ -39,26 +39,59 @@
   <p class="date">2018-06-26</p>
 </section>
 
-<section><section id="xpath" class="title-slide slide level1"><h1>XPath</h1></section><section id="examples" class="slide level2">
-<h2>Examples</h2>
-<p>[XPath Examples](https://msdn.microsoft.com/en-us/library/ms256086(v=vs.110%29.aspx)</p>
+<section><section id="section" class="title-slide slide level1"><h1></h1></section><section id="section-1" class="slide level2">
+<h2></h2>
+<p>This is not yet a presentation but a collection of notes for discussion. Their content is probably outdated. They will hopefully be replaced soon.</p>
+</section><section id="goal" class="slide level2">
+<h2>Goal</h2>
+<p>Overview of some technologies for the processing of XML data</p>
 </section></section>
-<section><section id="xslt" class="title-slide slide level1"><h1>XSLT</h1></section><section id="transformation-of-an-xml-document" class="slide level2">
-<h2>Transformation of an XML document</h2>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/TempEngXslt015.svg/462px-TempEngXslt015.svg.png" /></p>
+<section><section id="xpath" class="title-slide slide level1"><h1>XPath</h1></section><section id="xpath-basics" class="slide level2">
+<h2>XPath Basics</h2>
+<ul>
+<li>Syntax to address nodes in an XML document</li>
+<li>Component of XSLT rules</li>
+<li>Also used for XQuery</li>
+</ul>
+</section><section id="examples" class="slide level2">
+<h2>Examples</h2>
+<p><a href="https://goo.gl/4V82Ai">XPath Examples</a></p>
+</section></section>
+<section><section id="xslt" class="title-slide slide level1"><h1>XSLT</h1></section><section id="xslt-basics" class="slide level2">
+<h2>XSLT Basics</h2>
+<ul>
+<li>Purpose: Transformation of XML documents into other XML, HTML or text documents</li>
+<li>Functional programming language</li>
+<li>Works with an XSLT processor</li>
+</ul>
+</section><section id="xslt-elements" class="slide level2">
+<h2>XSLT Elements</h2>
+<ul>
+<li><a href="https://wiki.selfhtml.org/wiki/XML/XSL/XSLT/Sprachelemente">XML/XSL/XSLT/Sprachelemente – SELFHTML-Wiki</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/XSLT/Elements">XSLT elements reference - XSLT: Extensible Stylesheet Language Transformations | MDN</a></li>
+</ul>
+</section><section id="specifications" class="slide level2">
+<h2>Specifications</h2>
+<ul>
+<li>1999 <a href="https://www.w3.org/TR/1999/REC-xslt-19991116">XSL Transformations (XSLT)</a></li>
+<li>2009 <a href="https://www.w3.org/TR/2009/PER-xslt20-20090421/">XSL Transformations (XSLT) Version 2.0 (Second Edition)</a></li>
+<li>2017 <a href="https://www.w3.org/TR/2017/REC-xslt-30-20170608/">XSL Transformations (XSLT) Version 3.0</a></li>
+</ul>
+</section><section id="from-xslt-1.0-to-xslt-2.0" class="slide level2">
+<h2>From XSLT 1.0 to XSLT 2.0</h2>
+<p><a href="https://www.w3.org/TR/2009/PER-xslt20-20090421/#changes">Changes</a></p>
+</section><section id="xslt-3.0" class="slide level2">
+<h2>XSLT 3.0</h2>
+<blockquote>
+<p>The primary purpose of the changes in this version of the language is to enable transformations to be performed in streaming mode, where neither the source document nor the result document is ever held in memory in its entirety. Another important aim is to improve the modularity of large stylesheets… <a href="https://www.w3.org/TR/2017/REC-xslt-30-20170608/">XSL Transformations (XSLT) Version 3.0</a></p>
+</blockquote>
+</section><section class="slide level2">
+
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/TempEngXslt015.svg/462px-TempEngXslt015.svg.png" style="width:30.0%" /></p>
 <p>Source: <a href="https://commons.wikimedia.org/wiki/File:TempEngXslt015.svg">File:TempEngXslt015.svg - Wikimedia Commons</a></p>
-<tr>
-<td>
-This file is licensed under the <a href="https://en.wikipedia.org/wiki/en:Creative_Commons" class="extiw" title="w:en:Creative Commons">Creative Commons</a> <a rel="nofollow" class="external text" href="https://creativecommons.org/licenses/by/2.5/deed.en">Attribution 2.5 Generic</a> license.
-</td>
-<td style="width:90px;" rowspan="3">
-</td>
-</tr>
-<tr style="text-align:center;">
-<td>
-<span style="font-weight: bold;">Attribution: <span class="licensetpl_attr" style="font-size: larger;"><a href="https://en.wikipedia.org/wiki/User:Dreftymac" class="extiw" title="en:User:Dreftymac">Dreftymac</a> at <a class="external text" href="http://en.wikipedia.org">en.wikipedia</a></span></span>
-</td>
-</tr>
+<p style="font-size:x-small">
+This file is licensed under the <a href="https://en.wikipedia.org/wiki/en:Creative_Commons" title="w:en:Creative Commons">Creative Commons</a> <a rel="nofollow" class="external text" href="https://creativecommons.org/licenses/by/2.5/deed.en">Attribution 2.5 Generic</a> license. Attribution: <a href="https://en.wikipedia.org/wiki/User:Dreftymac" title="en:User:Dreftymac">Dreftymac</a> at <a href="http://en.wikipedia.org">en.wikipedia</a>
+</p>
 </section><section id="xslt-processor-online" class="slide level2">
 <h2>XSLT Processor online:</h2>
 <p><a href="https://www.freeformatter.com/xsl-transformer.html">Free Online XSL Transformer (XSLT) - FreeFormatter.com</a></p>
@@ -83,8 +116,15 @@ dita --input=sequence.ditamap --format=pdf</code></pre>
 <section><section id="xsl-and-svg" class="title-slide slide level1"><h1>XSL and SVG</h1></section><section id="example-for-a-transformation-to-svg" class="slide level2">
 <h2>Example for a transformation to SVG:</h2>
 <p><a href="https://www.data2type.de/xml-xslt-xslfo/xslt/xslt-kochbuch/xml-in-svg-umwandeln/vorgefertigtes-svg-transformie/">data2type GmbH: XSLT | Vorgefertigtes SVG transformieren</a></p>
+</section></section>
+<section><section id="xml-databases" class="title-slide slide level1"><h1>XML databases</h1></section><section id="xquery" class="slide level2">
+<h2>XQuery</h2>
+<p><a href="https://www.w3.org/TR/xquery/all/">xquery cover page - W3C</a></p>
+</section><section id="exist-db" class="slide level2">
+<h2>eXist db</h2>
+<p>-<a href="http://exist-db.org/exist/apps/homepage/index.html">eXist-db - The Open Source Native XML Database</a> -<a href="http://exist-db.org/exist/apps/homepage/references.html">eXistdb - References</a> -<a href="http://showcases.exist-db.org/exist/apps/Showcases/index.html">eXistdb - Showcases</a></p>
 <p>#Material</p>
-</section><section id="section" class="slide level2">
+</section><section id="section-2" class="slide level2">
 <h2></h2>
 <p>SelfHTML: <a href="https://wiki.selfhtml.org/wiki/XML/XSL/XSLT">XML/XSL/XSLT – SELFHTML-Wiki</a></p>
 <p><a href="https://creativecommons.org/licenses/by-sa/3.0/de/"><img data-src="https://wiki.selfhtml.org/resources/assets/licenses/cc-by-sa.png" /></a></p>
