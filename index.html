@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Heinz Wittenbrink">
+  <meta name="dcterms.date" content="2018-06-26">
+  <title>Material XSLT</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Material XSLT</h1>
+  <p class="author">Heinz Wittenbrink</p>
+  <p class="date">2018-06-26</p>
+</section>
+
+<section><section id="xpath" class="title-slide slide level1"><h1>XPath</h1></section><section id="examples" class="slide level2">
+<h2>Examples</h2>
+<p>[XPath Examples](https://msdn.microsoft.com/en-us/library/ms256086(v=vs.110%29.aspx)</p>
+</section></section>
+<section><section id="xslt" class="title-slide slide level1"><h1>XSLT</h1></section><section id="transformation-of-an-xml-document" class="slide level2">
+<h2>Transformation of an XML document</h2>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/TempEngXslt015.svg/462px-TempEngXslt015.svg.png" /></p>
+<p>Source: <a href="https://commons.wikimedia.org/wiki/File:TempEngXslt015.svg">File:TempEngXslt015.svg - Wikimedia Commons</a></p>
+<tr>
+<td>
+This file is licensed under the <a href="https://en.wikipedia.org/wiki/en:Creative_Commons" class="extiw" title="w:en:Creative Commons">Creative Commons</a> <a rel="nofollow" class="external text" href="https://creativecommons.org/licenses/by/2.5/deed.en">Attribution 2.5 Generic</a> license.
+</td>
+<td style="width:90px;" rowspan="3">
+</td>
+</tr>
+<tr style="text-align:center;">
+<td>
+<span style="font-weight: bold;">Attribution: <span class="licensetpl_attr" style="font-size: larger;"><a href="https://en.wikipedia.org/wiki/User:Dreftymac" class="extiw" title="en:User:Dreftymac">Dreftymac</a> at <a class="external text" href="http://en.wikipedia.org">en.wikipedia</a></span></span>
+</td>
+</tr>
+</section><section id="xslt-processor-online" class="slide level2">
+<h2>XSLT Processor online:</h2>
+<p><a href="https://www.freeformatter.com/xsl-transformer.html">Free Online XSL Transformer (XSLT) - FreeFormatter.com</a></p>
+</section></section>
+<section><section id="xslt-prozessoren" class="title-slide slide level1"><h1>XSLT-Prozessoren</h1></section><section id="saxon" class="slide level2">
+<h2>Saxon</h2>
+<p><a href="http://saxon.sourceforge.net/">The SAXON XSLT and XQuery Processor</a></p>
+<p><a href="https://www.data2type.de/xml-xslt-xslfo/xslt/xslt-prozessoren-fuer-xslt-2/">data2type GmbH: XSLT | XSLT-Prozessoren für XSLT 2.0</a></p>
+</section><section id="transformation-with-saxon-from-the-command-line" class="slide level2">
+<h2>Transformation with Saxon from the command line</h2>
+<pre><code>cd /Users/heinz/github/slides-intro2xsl 
+saxon -s:example1.xml -xsl:union.xsl -o:results1.txt --suppressXsltNamespaceCheck:on</code></pre>
+</section><section id="transformation-in-the-browser" class="slide level2">
+<h2>Transformation in the browser</h2>
+</section><section id="transformations-with-fop" class="slide level2">
+<h2>Transformations with FOP</h2>
+<pre><code>cd /Users/heinz/DITA/dita-ot-3.0/docsrc/samples 
+dita --input=sequence.ditamap --format=html5
+dita --input=sequence.ditamap --format=pdf</code></pre>
+<p>see: file:///Users/heinz/DITA/dita-ot-3.0/doc/getting-started/first-build-using-dita-command.html</p>
+</section></section>
+<section><section id="xsl-and-svg" class="title-slide slide level1"><h1>XSL and SVG</h1></section><section id="example-for-a-transformation-to-svg" class="slide level2">
+<h2>Example for a transformation to SVG:</h2>
+<p><a href="https://www.data2type.de/xml-xslt-xslfo/xslt/xslt-kochbuch/xml-in-svg-umwandeln/vorgefertigtes-svg-transformie/">data2type GmbH: XSLT | Vorgefertigtes SVG transformieren</a></p>
+<p>#Material</p>
+</section><section id="section" class="slide level2">
+<h2></h2>
+<p>SelfHTML: <a href="https://wiki.selfhtml.org/wiki/XML/XSL/XSLT">XML/XSL/XSLT – SELFHTML-Wiki</a></p>
+<p><a href="https://creativecommons.org/licenses/by-sa/3.0/de/"><img data-src="https://wiki.selfhtml.org/resources/assets/licenses/cc-by-sa.png" /></a></p>
+<p>Die Inhalte des SELFHTML-Wikis unterliegen der CC-BY-SA 3.0 (de). Nähere Informationen finden Sie unter SELFHTML:Wiki/Lizenzvereinbarungen.</p>
+</section><section class="slide level2">
+
+<p><a href="https://www.data2type.de/xml-xslt-xslfo/xslt/">data2type GmbH: XSLT | Einführung, Referenzen, Java und XSLT</a></p>
+<p>Anmerkung: Die mit einem * gekennzeichneten Themen stammen aus dem Buch “XSLT 2.0 &amp; XPath 2.0” von Frank Bongers</p>
+</section><section class="slide level2">
+
+<p><a href="https://www.teialehrbuch.de/Kostenlose-Kurse/XML-XSL/">XML - Ausgabeerzugung mit XSL - TEIA AG</a></p>
+</section><section class="slide level2">
+
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>

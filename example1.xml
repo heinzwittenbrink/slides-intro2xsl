@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<?xml-stylesheet type="text/xsl" href="union.xsl"?>
+<root>
+   <x>green</x>
+   <y>
+      <x>blue</x>
+      <x>blue</x>
+   </y>
+   <z>
+      <x>red</x>
+      <x>red</x>
+   </z>
+   <x>green</x>
+</root>
